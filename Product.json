@@ -32,35 +32,11 @@
         "stock": 0
     },
     {
-        "id": "5",
+        "id": 5,
         "name": "new Dove",
         "category": "Soap",
         "rating": 4.0,
         "price": 50.0,
         "stock": 5
-    },
-    {
-        "id": "6",
-        "name": "head and sholder",
-        "category": "shampoo",
-        "rating": 4.5,
-        "price": 56.0,
-        "stock": 4
-    },
-    {
-        "id": "7",
-        "name": "seven",
-        "category": "number",
-        "rating": 5.0,
-        "price": 8.0,
-        "stock": 11
-    },
-    {
-        "id": "8",
-        "name": "eight",
-        "category": "number",
-        "rating": 3.0,
-        "price": 33.33,
-        "stock": 33
     }
 ]

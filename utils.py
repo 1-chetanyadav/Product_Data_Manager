@@ -56,13 +56,19 @@ def delete_product(get_product_id,filename):
     print(get_product_id)
 
     products = load_products(filename)
-    print("pro load")
+    # print("product load")
     for index, product in enumerate (products):
-        print(f"{product['id']}")
+        # print(f"{product['id']}")
         if product['id'] == int(get_product_id):
             print("match found")
-            products.remove(product)
-            # products.pop(index)
+            sure = input(f"Are you sure to delete {product['name']} (y/n) ?")
+            if sure.lower() == 'y':
+                products.pop(index)
+            
+            else:
+                print("Delete Cancelled")
+                break
+            # products.remove(product)
             print(f"Delete done {product['id']}")
     with open(filename,'w') as file:
         json.dump(products,file,indent=4)

@@ -23,7 +23,7 @@ while(True):
 
     user_choice = input("Enter >> ")
     if user_choice == '1':
-        print("op1")
+        #print("option >> 1 choosed")
         products = load_products(filename)
         display_products(products)
     
